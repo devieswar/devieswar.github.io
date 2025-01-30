@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+#hero {
+    background-color: #f8f9fa;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    margin-top: 20px;
+}
+
+#about, #experience, #projects, #skills, #contact {
+    background-color: #fff;
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+#experience, #skills {
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.project img {
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem; /* Adds space between input fields */
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-family: helvetica-w01-roman, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form textarea.form-control {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+.contact-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: helvetica-w01-roman, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Adds a slight lift effect on hover */
+}
+
+.contact-form .btn-primary:active {
+    transform: translateY(0); /* Resets the lift effect on click */
+}
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Right Column Styling */
+.contact-form {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .col-lg-6 {
+        margin-bottom: 20px; /* Adds space between columns on smaller screens */
+    }
+}
