@@ -1,1 +1,0 @@
-# devieswar.github.io
