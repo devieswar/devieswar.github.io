@@ -27,16 +27,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
 }
 
-#about, #experience, #projects, #skills, #contact {
+#about {
     background-color: #fff;
 }
+
+#experience, #projects, #skills, #contact {
+    background-color: var(--vscode-bg);
+}
+
 .btn-primary:hover {
     background-color: #0056b3; /* Darker shade of primary color */
     transform: scale(1.05); /* Slightly enlarge the button */
     transition: all 0.3s ease; /* Smooth transition */
-}
-#experience, #skills {
-    background-color: #f8f9fa;
 }
 
 footer {
@@ -108,6 +110,108 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Chatbot Button */
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0077b5;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-button i {
+    font-size: 24px;
+}
+
+/* Chatbot Window */
+.chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #0077b5;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h5 {
+    margin: 0;
+}
+
+.close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chatbot-input button {
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Sidebar and Content Area Layout */
+.sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.content-area {
+    margin-left: 20%;
+    width: 80%;
+    min-height: 100vh;
 }
 
 /* Responsive Adjustments */
