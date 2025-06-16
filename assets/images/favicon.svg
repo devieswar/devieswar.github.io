@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="32" height="32" fill="#1E1E1E"/>
+    
+    <!-- Letter D -->
+    <text x="16" y="22" 
+          font-family="Arial" 
+          font-size="24" 
+          font-weight="bold" 
+          fill="#007ACC" 
+          text-anchor="middle">
+        D
+    </text>
+    
+    <!-- Border -->
+    <rect width="32" height="32" 
+          fill="none" 
+          stroke="#333333" 
+          stroke-width="1"/>
+</svg> 
