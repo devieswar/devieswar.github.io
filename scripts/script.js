@@ -183,4 +183,82 @@ document.querySelectorAll('.skill-card').forEach(card => {
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0)';
     });
+});
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.sidebar');
+    const contentArea = document.querySelector('.content-area');
+    
+    // Create mobile menu overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'mobile-overlay';
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 1999;
+    `;
+    document.body.appendChild(overlay);
+    
+    // Toggle sidebar on mobile
+    const toggleMobileMenu = () => {
+        const isMobile = window.innerWidth <= 992;
+        if (isMobile) {
+            sidebar.classList.toggle('mobile-active');
+            if (sidebar.classList.contains('mobile-active')) {
+                overlay.style.display = 'block';
+            } else {
+                overlay.style.display = 'none';
+            }
+        }
+    };
+    
+    // Click on pseudo-element (menu button) to toggle
+    document.body.addEventListener('click', (e) => {
+        const rect = {
+            top: 10,
+            left: 10,
+            right: 50,
+            bottom: 50
+        };
+        
+        if (window.innerWidth <= 992 &&
+            e.clientX >= rect.left &&
+            e.clientX <= rect.right &&
+            e.clientY >= rect.top &&
+            e.clientY <= rect.bottom) {
+            toggleMobileMenu();
+        }
+    });
+    
+    // Close sidebar when clicking overlay
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('mobile-active');
+        overlay.style.display = 'none';
+    });
+    
+    // Close sidebar when clicking a link on mobile
+    document.querySelectorAll('.sidebar-tab, .nested-item').forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 992) {
+                setTimeout(() => {
+                    sidebar.classList.remove('mobile-active');
+                    overlay.style.display = 'none';
+                }, 300);
+            }
+        });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 992) {
+            sidebar.classList.remove('mobile-active');
+            overlay.style.display = 'none';
+        }
+    });
 }); 

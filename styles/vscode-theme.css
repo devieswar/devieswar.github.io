@@ -1800,7 +1800,200 @@ footer {
 }
 
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+    /* Hide activity bar and adjust sidebar on tablets */
+    .activity-bar {
+        display: none;
+    }
+    
+    .sidebar {
+        left: 0;
+        width: 250px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 2000;
+    }
+    
+    .sidebar.mobile-active {
+        transform: translateX(0);
+    }
+    
+    .content-area {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    footer {
+        margin-left: 0;
+    }
+    
+    .status-bar {
+        left: 0;
+    }
+    
+    /* Add mobile menu button */
+    body::before {
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 2001;
+        background: var(--vscode-sidebar-bg);
+        color: var(--vscode-text);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid var(--vscode-border);
+    }
+    
+    /* Skills explorer responsive */
+    .skills-explorer {
+        flex-direction: column;
+    }
+
+    .skills-categories {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--vscode-border);
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        white-space: nowrap;
+    }
+    
+    .skills-category {
+        padding: 8px 12px;
+        flex-shrink: 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .skills-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-search {
+        width: 100%;
+    }
+    
+    /* Experience stages responsive */
+    .experience-stages {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .experience-stage::before {
+        display: none;
+    }
+    
+    .pipeline-status {
+        right: 10px;
+        top: 10px;
+    }
+}
+
 @media (max-width: 768px) {
+    /* Typography adjustments for mobile */
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.1rem; }
+    
+    /* Profile section */
+    .profile-section {
+        padding: 15px;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-name {
+        font-size: 20px;
+    }
+    
+    /* Experience items */
+    .experience-item {
+        padding: 15px;
+    }
+    
+    .experience-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .experience-header h4 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .experience-date {
+        margin-left: 0;
+        font-size: 0.85em;
+    }
+    
+    .experience-header img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .stage-title {
+        font-size: 0.85em;
+    }
+    
+    .stage-content {
+        font-size: 0.85em;
+    }
+    
+    /* Project items */
+    .project-item {
+        padding: 15px;
+    }
+    
+    .project-image {
+        height: 150px;
+    }
+    
+    /* Skills grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-card {
+        padding: 12px;
+    }
+    
+    /* Contact container */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 1rem;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+    
+    .social-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Education timeline */
     .education-timeline::before {
         left: 30px;
     }
@@ -1830,5 +2023,127 @@ footer {
 
     .certifications-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .certification-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Content tabs */
+    .content-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .content-tab {
+        flex-shrink: 0;
+        min-width: 100px;
+    }
+    
+    /* Breadcrumbs */
+    .breadcrumbs {
+        overflow-x: auto;
+    }
+    
+    /* Chatbot responsive */
+    .chatbot-window {
+        width: calc(100% - 40px);
+        left: 20px;
+        right: 20px;
+        max-width: 100%;
+    }
+    
+    .chatbot-button {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    /* Status bar */
+    .status-bar {
+        font-size: 11px;
+    }
+    
+    .status-bar-item {
+        margin-right: 10px;
+    }
+    
+    /* Command palette */
+    .command-palette {
+        width: calc(100% - 40px);
+        max-width: 100%;
+    }
+    
+    /* Tab content padding */
+    .tab-content {
+        padding: 15px;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small devices */
+    body {
+        font-size: 13px;
+    }
+    
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.15rem; }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-name {
+        font-size: 18px;
+    }
+    
+    .experience-item {
+        padding: 12px;
+    }
+    
+    .experience-header h4 {
+        font-size: 0.95rem;
+    }
+    
+    .tab-content {
+        padding: 10px;
+    }
+    
+    .skills-categories {
+        padding: 5px;
+    }
+    
+    .skills-category {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .skill-card {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .skill-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .social-links a {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
     }
 } 
