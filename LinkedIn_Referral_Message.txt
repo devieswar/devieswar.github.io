@@ -1,0 +1,28 @@
+=== TEMPLATE INSTRUCTIONS ===
+1. Replace [FIRST_NAME] with the recipient's first name (e.g., "Julie" or "John")
+2. Replace [COMPANY_NAME] with the company name (e.g., "ConstructConnect")
+3. Use Find & Replace (Cmd+F or Ctrl+F) to replace all instances at once
+4. For LinkedIn DM: Just copy and paste (no subject line needed)
+5. For Email: Add subject line: "Interested in [COMPANY_NAME] AI Engineering Opportunities - Referral Request"
+====================================
+
+Hi [FIRST_NAME],
+
+I came across your post about [COMPANY_NAME]'s scaling initiatives in Product, Engineering, and AI. I'm excited about the opportunity to contribute to your GenAI and construction tech mission in Atlanta.
+
+I'm currently an AI Engineer with 5+ years building production AI systems. My experience aligns well with your tech stack:
+• RAG & LLMs: Lead engineer on production RAG platform using Claude 3 and multi-agent systems. Architected multi-agent orchestration using MCP (Model Context Protocol) with JSON-RPC/SSE protocols for agent-to-agent communication. Implemented optimized hybrid search (vector + metadata filtering) across 100K+ document collections
+• Computer Vision: Built CNN models for image processing achieving 83% SSIM improvement, plus vision-language models
+• Cloud & MLOps: Production experience with AWS SageMaker, Bedrock, Docker, Kubernetes (transferable to GCP/Vertex AI)
+• Full-Stack: FastAPI, Node.js, React/Angular - ship end-to-end applications
+
+Completing my Master's in CS at UC (GPA: 3.67/4.0) with coursework in ML, Deep Learning, Computer Vision, NLP. AWS Solutions Architect certified.
+
+Would you be open to referring me to one of the open positions? I'd love to discuss how I can contribute to [COMPANY_NAME]'s AI initiatives.
+
+Thank you for your time!
+
+Best regards,
+Devi Eswar Kumar Damerla
+devieswar79@gmail.com | linkedin.com/in/devi-eswar-kumar-damerla
+
