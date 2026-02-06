@@ -80,7 +80,7 @@
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-Full-Stack Software Engineer with 5+ years of experience delivering scalable, production-grade systems across web, cloud, and AI/ML domains. Expert in full-stack development leveraging FastAPI, Node.js, NestJS, Angular, and React with proven capability to architect and deploy end-to-end applications. Specialized in embedding AI/ML solutions including Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and knowledge graph architectures into production environments. Proficient in cloud infrastructure (AWS SageMaker, Bedrock, ECS Fargate), microservices architecture, and DevOps methodologies (Docker, Kubernetes, CI/CD). Demonstrated track record of generating measurable business impact through technical innovation and cross-functional collaboration.
+Full-Stack AI Engineer with 5+ years of experience architecting scalable production systems. Expert in building Agentic AI applications and end-to-end solutions using FastAPI, NestJS, and React, with deep specialization in LLMs, RAG, and Knowledge Graph architectures. Proficient in cloud-native MLOps (AWS SageMaker, Bedrock, ECS), microservices, and DevOps. Proven track record of delivering measurable business impact through technical innovation.
 }
 
 %-----------EXPERIENCE-----------
@@ -88,15 +88,15 @@ Full-Stack Software Engineer with 5+ years of experience delivering scalable, pr
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {AI Engineer}{Nov 2024 -- Present}
+      {Software Engineer - AI}{Nov 2024 -- Present}
       {AI for ALL LLC (AI OWL)}{Columbus, OH}
       \resumeItemListStart
-        \resumeItem{Lead engineer for Flash AI, a CJIS-compliant evidence intelligence platform enabling secure multimedia (video, audio, document) analysis for law enforcement using RAG and multi-agent LLM systems (Claude 3, Legal-BERT).}
-        \resumeItem{Architected and implemented multi-agent orchestration layer using MCP (Model Context Protocol) with JSON-RPC/SSE protocols, enabling agent-to-agent communication for collaborative task execution and escalation handling.}
+        \resumeItem{Lead Engineer for Flash AI, a CJIS-compliant evidence intelligence platform using RAG and multi-agent systems for secure law enforcement multimedia analysis.}
+        \resumeItem{Architected multi-agent orchestration layer using MCP (Model Context Protocol) over JSON-RPC/SSE, facilitating autonomous agent collaboration and complex escalation workflows.}
         \resumeItem{Designed transformer fine-tuning pipelines using LoRA and QLoRA for legal domain adaptation, boosting semantic retrieval precision by 35\% while slashing inference costs by 40\%.}
-        \resumeItem{Integrated Weaviate vector database with AWS SageMaker and FastAPI microservices, implementing optimized hybrid search (semantic vector search + metadata filtering) with role-based access control across 100K+ document collections.}
+        \resumeItem{Delivered sub-100ms hybrid search across 100K+ documents by integrating Neo4j knowledge graphs and Weaviate vector indices within AWS SageMaker microservices.}
         \resumeItem{Orchestrated asynchronous multimodal ingestion pipelines using WhisperX, OpenCV, and FFmpeg for audio-video transcription and scene understanding, accelerating processing time by 60\% and enabling Vision-Language Model capabilities.}
-        \resumeItem{Established MLOps pipelines with Docker, ECS Fargate, and SageMaker for continuous model evaluation, versioning, model governance, and audit compliance in production environments.}
+        \resumeItem{Established Terraform MLOps pipelines for ECS Fargate and SageMaker, ensuring continuous model evaluation, immutable versioning, and strict audit compliance.}
         \resumeItem{Mentored junior engineers on RAG architecture design, LLM prompt engineering, and vector database schema optimization; contributed to AI product roadmap and strategic integration initiatives.}
       \resumeItemListEnd
 
@@ -104,11 +104,21 @@ Full-Stack Software Engineer with 5+ years of experience delivering scalable, pr
       {Software Engineer}{Aug 2021 -- Jul 2023}
       {Airbus Group}{Bengaluru, India}
       \resumeItemListStart
-        \resumeItem{Enhanced aircraft 2D/3D CAD model loading performance by 75\% through microservices-based iPaaS application leveraging NestJS, Angular, AWS Application Load Balancer, and S3 optimization strategies.}
-        \resumeItem{Delivered MEAN stack application that decreased CATIA license dependency by 60\%, cutting annual software costs by \$120K+ while maintaining design quality through WebSocket-based model streaming.}
-        \resumeItem{Deployed OAuth-based Single Sign-On (SSO) and comprehensive API documentation using Swagger/OpenAPI; participated in Agile/Scrum and SAFe ceremonies across full SDLC.}
+        \resumeItem{Boosted aircraft CAD model loading performance by 75\% via a NestJS/Angular iPaaS microservice with optimized S3 caching strategies.}
+        \resumeItem{Cut annual software costs by \$120K+ (60\%) by replacing CATIA dependencies with a custom MEAN stack solution featuring WebSocket model streaming.}
+        \resumeItem{Implemented OAuth SSO and standardized API documentation using Swagger/OpenAPI.}
         \resumeItem{Automated design quality checks and optimized SQL queries from 3+ minutes to under 60 seconds, accelerating data processing for 200+ engineering workflows.}
         \resumeItem{Configured CI/CD pipelines using Jenkins on AWS ECS Docker containers with SonarQube integration for code quality gates; executed smooth MariaDB-to-MySQL migrations with zero downtime.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Data Scientist}{Aug 2019 -- Jun 2021}
+      {MCR Web Solutions}{Andhra Pradesh, India}
+      \resumeItemListStart
+        \resumeItem{Architected optimized CNN models for image denoising, deblurring, and low-light enhancement using TensorFlow, achieving 83\% structural similarity (SSIM) improvement through hyperparameter tuning and data augmentation.}
+        \resumeItem{Engineered automated ML pipeline integrating preprocessing, training, and inference with Python, TensorFlow, and AWS Lambda, cutting processing latency by 60\% and enabling on-demand image enhancement at scale.}
+        \resumeItem{Deployed models as auto-scaling serverless microservices on AWS Lambda/Docker.}
+        \resumeItem{Identified critical noise patterns in large-scale datasets to drive feature extraction strategy.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -139,27 +149,18 @@ Full-Stack Software Engineer with 5+ years of experience delivering scalable, pr
       \resumeProjectHeading
           {\textbf{ArthaNethra — AI Financial Risk Investigator} $|$ \emph{Python, FastAPI, Neo4j, Weaviate, Angular}}{Oct 2024 -- Nov 2024}
           \resumeItemListStart
-            \resumeItem{\textbf{Financial AI Hackathon Finalist} — Engineered knowledge graph-native financial investigation platform that automatically maps entities and relationships across multiple documents (10-Ks, contracts, invoices) into interactive graph database.}
-            \resumeItem{Designed dual-database system using Neo4j for entity relationships and Weaviate for semantic vector search, enabling complex cross-document queries impossible with traditional RAG approaches.}
-            \resumeItem{Constructed hybrid AI extraction pipeline combining LandingAI ADE for structured data and AWS Bedrock Claude for narrative parsing, achieving 99\% accuracy at 80\% lower cost than pure LLM approaches.}
-            \resumeItem{Built explainable AI chatbot with clickable PDF citations and automatic graph generation; integrated Sigma.js for interactive visualization with multiple layout algorithms.}
-            \resumeItem{Deployed full-stack application using Docker Compose; slashes M\&A due diligence time from 200+ hours to under 2 hours (90\% time reduction).}
+            \resumeItem{\textbf{Financial AI Hackathon Finalist} — Engineered knowledge graph-native financial investigation platform mapping entities across 10-Ks, contracts, and invoices.}
+            \resumeItem{Designed dual-database architecture (Neo4j + Weaviate) enabling complex cross-document queries beyond traditional RAG capabilities.}
+            \resumeItem{Constructed hybrid extraction pipeline (LandingAI + Claude) achieving 99\% accuracy at 80\% lower cost than pure LLM approaches.}
+            \resumeItem{Built explainable AI chatbot with clickable PDF citations and interactive Sigma.js graph visualizations.}
+            \resumeItem{Deployed full-stack application via Docker Compose; reduced M\&A due diligence time from 200+ hours to under 2 hours (90\% reduction).}
           \resumeItemListEnd
           
       \resumeProjectHeading
           {\textbf{Context-Driven Image Narration} $|$ \emph{React, Node.js, Python, TensorFlow, Transformers}}{Sep 2023 -- Feb 2024}
           \resumeItemListStart
-            \resumeItem{Led development of MERN stack application with deep learning model achieving 79.7\% accuracy in object recognition using TensorFlow and Hugging Face Transformers for context-based image captioning and narration.}
-            \resumeItem{Built data preprocessing pipeline for large-scale datasets and improved model performance through transfer learning with pre-trained vision-language models.}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Image Enhancement Platform} $|$ \emph{Python, TensorFlow, AWS Lambda, Docker}}{Aug 2019 -- Jun 2021}
-          \resumeItemListStart
-            \resumeItem{Architected optimized CNN models for image denoising, deblurring, and low-light enhancement using TensorFlow, achieving 83\% structural similarity (SSIM) improvement through hyperparameter tuning and data augmentation.}
-            \resumeItem{Engineered automated ML pipeline integrating preprocessing, training, and inference with Python, TensorFlow, and AWS Lambda, cutting processing latency by 60\% and enabling on-demand image enhancement at scale.}
-            \resumeItem{Deployed trained models as Docker-based microservices via RESTful APIs on AWS infrastructure for serverless execution with auto-scaling compute allocation.}
-            \resumeItem{Performed exploratory data analysis (EDA) on large-scale image datasets using NumPy, Pandas, and Matplotlib to identify noise patterns and optimize feature extraction strategies.}
+            \resumeItem{Led MERN stack development of an image narration tool, achieving 79.7\% object recognition accuracy via TensorFlow and Hugging Face Transformers.}
+            \resumeItem{Optimized model performance via transfer learning on large-scale datasets using pre-trained vision-language models.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd

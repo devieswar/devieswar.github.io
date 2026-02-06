@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Devi Eswar Kumar Damerla
+% Optimized for ATS
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Devi Eswar Kumar Damerla} \\ \vspace{1pt}
+    \small \href{mailto:devieswar79@gmail.com}{\underline{devieswar79@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/devi-eswar-kumar-damerla}{\underline{linkedin.com/in/devi-eswar-kumar-damerla}} $|$
+    \href{https://devieswar.github.io/}{\underline{devieswar.github.io}} 
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{
+Platform Engineer with 5+ years of experience designing and delivering scalable, distributed systems and microservices architectures across cloud platforms. Expert in backend development using Python (FastAPI, Django, Flask), Java (Spring Boot), and .NET with containerization via Docker and Kubernetes orchestration. Specialized in building AI-enhanced platforms integrating LLMs, vector databases, knowledge graphs (Neo4j), and agentic workflows into production environments. Proficient in cloud infrastructure (AWS, Azure), PostgreSQL/SQL databases, message queues (RabbitMQ, Redis), authentication systems (OAuth2, OIDC, Keycloak), and TDD practices. Champion of DevOps methodologies (CI/CD, infrastructure-as-code) with demonstrated track record of optimizing platform performance, reliability, and delivering measurable business impact through cross-functional collaboration.
+}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Platform Engineer}{Nov 2024 -- Present}
+      {AI for ALL LLC (AI OWL)}{Columbus, OH}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed Flash AI, a CJIS-compliant evidence intelligence platform using microservices architecture with FastAPI, PostgreSQL, and containerized services orchestrated via Docker Kubernetes on AWS/Azure hybrid cloud infrastructure.}
+        \resumeItem{Designed and implemented RESTful APIs and multi-agent orchestration layer using MCP (Model Context Protocol) with JSON-RPC/SSE protocols, implementing OAuth2/OIDC authentication and role-based access control for secure agent-to-agent communication.}
+        \resumeItem{Built scalable data ingestion pipelines with message queues (RabbitMQ) and caching layers (Redis), processing 100K+ documents with asynchronous workers, accelerating processing throughput by 60\% while maintaining system reliability.}
+        \resumeItem{Integrated Weaviate vector database and Neo4j graph database with AWS SageMaker and FastAPI microservices, implementing optimized hybrid search (semantic vector search + graph traversal + metadata filtering) using SQLAlchemy ORM for PostgreSQL data models and queries.}
+        \resumeItem{Championed test-driven development (TDD) practices, implementing comprehensive unit and integration testing suites achieving 85\%+ code coverage; established CI/CD pipelines with automated testing gates and infrastructure-as-code deployments.}
+        \resumeItem{Deployed containerized applications using Docker, Kubernetes, and Helm charts on AWS ECS Fargate and Azure Kubernetes Service (AKS); monitored, troubleshot, and optimized platform performance using Azure Monitor and CloudWatch.}
+        \resumeItem{Mentored junior engineers on distributed systems architecture, API design patterns, and platform engineering best practices; collaborated with cross-functional teams to translate business requirements into scalable technical solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Aug 2021 -- Jul 2023}
+      {Airbus Group}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Designed and built large-scale distributed system using NestJS microservices architecture with Angular frontend, AWS Application Load Balancer, and S3 object storage, improving aircraft CAD model loading performance by 75\% through platform optimization.}
+        \resumeItem{Architected RESTful APIs using OpenAPI specifications with comprehensive Swagger documentation; implemented OAuth-based Single Sign-On (SSO) and JWT authentication mechanisms for secure service-to-service communication.}
+        \resumeItem{Developed MEAN stack platform with WebSocket-based real-time communication, PostgreSQL/MySQL database optimization, and distributed caching strategies, reducing CATIA license dependency by 60\% and cutting annual costs by \$120K+.}
+        \resumeItem{Built automated CI/CD pipelines using Jenkins on AWS ECS with Docker containerization, integrated SonarQube for code quality gates, and implemented infrastructure-as-code practices; executed zero-downtime MariaDB-to-MySQL migrations.}
+        \resumeItem{Optimized SQL queries and data models reducing processing time from 3+ minutes to under 60 seconds for 200+ engineering workflows; collaborated with cross-functional teams following Agile/Scrum and SAFe delivery methodologies across full SDLC.}
+        \resumeItem{Monitored platform performance and reliability using CloudWatch metrics; troubleshot production issues and implemented proactive alerting systems for mission-critical services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Developer \& Data Scientist}{Aug 2019 -- Jun 2021}
+      {MCR Web Solutions}{Andhra Pradesh, India}
+      \resumeItemListStart
+        \resumeItem{Built RESTful APIs and microservices using Python (Flask, Django), TensorFlow, and PostgreSQL for image processing platform; implemented containerized deployment using Docker on AWS Lambda with auto-scaling compute allocation.}
+        \resumeItem{Architected automated ML pipeline with Python backend services integrating preprocessing, training, and inference workflows, cutting processing latency by 60\% and enabling serverless execution at scale.}
+        \resumeItem{Designed and optimized PostgreSQL database schemas and queries for storing model metadata and processing results; implemented caching strategies using Redis to improve API response times by 40\%.}
+        \resumeItem{Developed CNN models achieving 83\% structural similarity (SSIM) improvement; championed unit testing practices and integrated CI/CD workflows for model deployment and version control.}
+        \resumeItem{Performed exploratory data analysis (EDA) using NumPy, Pandas, and SQL queries on large-scale datasets; collaborated with cross-functional teams to translate requirements into technical solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{May 2019 -- Jul 2019}
+      {TheSmartBridge Private Limited}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Developed machine learning model achieving 95\% accuracy using Python, scikit-learn algorithms (Naive Bayes, decision trees, random forest); deployed as Django web application with PostgreSQL database backend and RESTful API endpoints.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Engineering in Computer Science}{Apr 2025}
+      {University of Cincinnati, College of Engineering and Applied Science}{Cincinnati, OH}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.67/4.0}
+        \resumeItem{Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Cloud Computing, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{ArthaNethra — AI Financial Risk Platform} $|$ \emph{Python, FastAPI, Neo4j, PostgreSQL, Docker}}{Oct 2024 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Financial AI Hackathon Finalist} — Architected distributed platform with microservices architecture using FastAPI, Neo4j graph database, Weaviate vector store, and PostgreSQL, processing 10-Ks, contracts, and invoices into interactive knowledge graphs.}
+            \resumeItem{Designed RESTful APIs with OpenAPI specifications and implemented dual-database architecture enabling complex cross-document queries; optimized PostgreSQL queries and Neo4j Cypher statements for sub-second response times.}
+            \resumeItem{Built hybrid AI extraction pipeline integrating LandingAI ADE and AWS Bedrock APIs, achieving 99\% accuracy at 80\% lower cost; implemented authentication using OAuth2 and JWT tokens for secure multi-tenant access.}
+            \resumeItem{Containerized full-stack application using Docker Compose with environment-based configuration; implemented monitoring and logging for platform reliability; reduced M\&A due diligence time by 90\% (from 200+ to under 2 hours).}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Context-Driven Image Narration Platform} $|$ \emph{Node.js, Python, PostgreSQL, Docker, TensorFlow}}{Sep 2023 -- Feb 2024}
+          \resumeItemListStart
+            \resumeItem{Built scalable backend platform using Node.js/Express with RESTful APIs and PostgreSQL database; implemented data preprocessing pipeline processing large-scale datasets with optimized SQL queries and caching strategies.}
+            \resumeItem{Developed deep learning model achieving 79.7\% accuracy in object recognition using Python, TensorFlow, and Hugging Face Transformers; containerized model inference service using Docker for horizontal scaling.}
+            \resumeItem{Implemented authentication and authorization mechanisms; followed test-driven development (TDD) practices with unit and integration testing achieving 80\%+ code coverage.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, C\#, JavaScript, TypeScript, Go, SQL} \\[3pt]
+     \textbf{Backend Frameworks}{: FastAPI, Flask, Django, Spring Boot, .NET Core, Node.js, NestJS} \\[3pt]
+     \textbf{Databases \& ORMs}{: PostgreSQL, MySQL, MongoDB, Neo4j, Redis, Elasticsearch, SQLAlchemy, Hibernate} \\[3pt]
+     \textbf{Cloud \& Platform}{: AWS (ECS, Lambda, S3, SageMaker), Azure (AKS, Blob Storage, APIM, AAD), Docker, Kubernetes, Helm} \\[3pt]
+     \textbf{APIs \& Integration}{: RESTful APIs, OpenAPI/Swagger, OAuth2, OIDC, Keycloak, JWT, WebSockets, gRPC} \\[3pt]
+     \textbf{DevOps \& Tools}{: CI/CD, Jenkins, Git, Infrastructure-as-Code, SonarQube, CloudWatch, Azure Monitor} \\[3pt]
+     \textbf{Architecture \& Practices}{: Microservices, Distributed Systems, Message Queues (RabbitMQ), TDD, Agile/Scrum} \\[3pt]
+     \textbf{AI/ML Integration}{: LLMs, Vector Databases (Weaviate, Pinecone), Knowledge Graphs (Neo4j), RAG, Agentic Workflows, Embedding Search, PyTorch, TensorFlow, Hugging Face, LangChain}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{AWS Certified Solutions Architect – Associate} \\
+\textbf{Deep Learning Specialization} — DeepLearning.AI (Coursera)
+}}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
