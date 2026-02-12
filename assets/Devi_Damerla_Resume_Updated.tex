@@ -4,7 +4,7 @@
 % Optimized for ATS
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -17,6 +17,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[sfdefault]{roboto}  % Modern sans-serif font (Google's Roboto)
+\usepackage[T1]{fontenc}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -40,30 +42,30 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 % Ensure PDF is ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
-\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-7pt}}
+  \end{tabular*}\vspace{-5pt}}
 \newcommand{\resumeProjectHeading}[2]{\item
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \small#1 & #2 \\
-  \end{tabular*}\vspace{-7pt}}
+  \end{tabular*}\vspace{-5pt}}
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
 \newcommand{\resumeItemListStart}{\begin{itemize}} 
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}} 
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,15 +74,15 @@
 
 \begin{center}
     \textbf{\Huge \scshape Devi Eswar Kumar Damerla} \\ \vspace{1pt}
-    \small \href{mailto:devieswar79@gmail.com}{\underline{devieswar79@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/devi-eswar-kumar-damerla}{\underline{linkedin.com/in/devi-eswar-kumar-damerla}} $|$
+    \small \href{mailto:devieswar79@gmail.com}{\underline{devieswar79@gmail.com}} | 
+    \href{https://www.linkedin.com/in/devi-eswar-kumar-damerla}{\underline{linkedin.com/in/devi-eswar-kumar-damerla}} |
     \href{https://devieswar.github.io/}{\underline{devieswar.github.io}} 
 \end{center}
 
 %-----------SUMMARY-----------
 \section{Professional Summary}
 \small{
-Full-Stack AI Engineer with 5+ years of experience architecting scalable production systems. Expert in building Agentic AI applications and end-to-end solutions using FastAPI, NestJS, and React, with deep specialization in LLMs, RAG, and Knowledge Graph architectures. Proficient in cloud-native MLOps (AWS SageMaker, Bedrock, ECS), microservices, and DevOps. Proven track record of delivering measurable business impact through technical innovation.
+Software Engineer with 3+ years building scalable distributed systems and optimizing high-performance databases. Delivered 60-90\% latency reductions across production microservices serving 200+ concurrent users, cut infrastructure costs by \$160K+ through architectural improvements, and led zero-downtime migrations of 50M+ records. Expert in event-driven architectures, database optimization, and cloud infrastructure with strong fundamentals in algorithms and system design.
 }
 
 %-----------EXPERIENCE-----------
@@ -88,44 +90,27 @@ Full-Stack AI Engineer with 5+ years of experience architecting scalable product
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer - AI}{Nov 2024 -- Present}
-      {AI for ALL LLC (AI OWL)}{Columbus, OH}
+      {Software Engineer}{Nov 2024 -- Present}
+      {AI OWL}{Columbus, OH}
       \resumeItemListStart
-        \resumeItem{Lead Engineer for Flash AI, a CJIS-compliant evidence intelligence platform using RAG and multi-agent systems for secure law enforcement multimedia analysis.}
-        \resumeItem{Architected multi-agent orchestration layer using MCP (Model Context Protocol) over JSON-RPC/SSE, facilitating autonomous agent collaboration and complex escalation workflows.}
-        \resumeItem{Designed transformer fine-tuning pipelines using LoRA and QLoRA for legal domain adaptation, boosting semantic retrieval precision by 35\% while slashing inference costs by 40\%.}
-        \resumeItem{Delivered sub-100ms hybrid search across 100K+ documents by integrating Neo4j knowledge graphs and Weaviate vector indices within AWS SageMaker microservices.}
-        \resumeItem{Orchestrated asynchronous multimodal ingestion pipelines using WhisperX, OpenCV, and FFmpeg for audio-video transcription and scene understanding, accelerating processing time by 60\% and enabling Vision-Language Model capabilities.}
-        \resumeItem{Established Terraform MLOps pipelines for ECS Fargate and SageMaker, ensuring continuous model evaluation, immutable versioning, and strict audit compliance.}
-        \resumeItem{Mentored junior engineers on RAG architecture design, LLM prompt engineering, and vector database schema optimization; contributed to AI product roadmap and strategic integration initiatives.}
+        \resumeItem{Architected and scaled distributed platform serving multiple facilities with microservices, relational and graph databases, reducing system latency by 60\% and cutting operational analysis time by 90\% through query optimization and automation.}
+        \resumeItem{Built event-driven architecture processing 100K+ messages daily with auto-scaling services, lowering infrastructure costs by 40\% and achieving 99.9\% processing success rate.}
+        \resumeItem{Accelerated database queries from 3+ minutes to seconds through strategic indexing and connection pooling while supporting hundreds of concurrent users.}
+        \resumeItem{Enabled real-time event propagation across microservices for instant updates to concurrent clients while maintaining 99.9\% availability.}
+        \resumeItem{Deployed infrastructure as code and CI/CD pipelines for automated testing with zero-downtime deployments across dev/prod environments.}
+        \resumeItem{Led technical design reviews and mentored engineers on distributed systems optimization.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Aug 2021 -- Jul 2023}
       {Airbus Group}{Bengaluru, India}
       \resumeItemListStart
-        \resumeItem{Boosted aircraft CAD model loading performance by 75\% via a NestJS/Angular iPaaS microservice with optimized S3 caching strategies.}
-        \resumeItem{Cut annual software costs by \$120K+ (60\%) by replacing CATIA dependencies with a custom MEAN stack solution featuring WebSocket model streaming.}
-        \resumeItem{Implemented OAuth SSO and standardized API documentation using Swagger/OpenAPI.}
-        \resumeItem{Automated design quality checks and optimized SQL queries from 3+ minutes to under 60 seconds, accelerating data processing for 200+ engineering workflows.}
-        \resumeItem{Configured CI/CD pipelines using Jenkins on AWS ECS Docker containers with SonarQube integration for code quality gates; executed smooth MariaDB-to-MySQL migrations with zero downtime.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Junior Data Scientist}{Aug 2019 -- Jun 2021}
-      {MCR Web Solutions}{Andhra Pradesh, India}
-      \resumeItemListStart
-        \resumeItem{Architected optimized CNN models for image denoising, deblurring, and low-light enhancement using TensorFlow, achieving 83\% structural similarity (SSIM) improvement through hyperparameter tuning and data augmentation.}
-        \resumeItem{Engineered automated ML pipeline integrating preprocessing, training, and inference with Python, TensorFlow, and AWS Lambda, cutting processing latency by 60\% and enabling on-demand image enhancement at scale.}
-        \resumeItem{Deployed models as auto-scaling serverless microservices on AWS Lambda/Docker.}
-        \resumeItem{Identified critical noise patterns in large-scale datasets to drive feature extraction strategy.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Machine Learning Engineer Intern}{May 2019 -- Jul 2019}
-      {TheSmartBridge Private Limited}{Hyderabad, India}
-      \resumeItemListStart
-        \resumeItem{Created machine learning model for chronic kidney disease diagnosis achieving 95\% accuracy using Naive Bayes, decision trees, and random forest algorithms; deployed as Django web application with user-friendly interface.}
+        \resumeItem{Scaled microservices platform serving 200+ engineers with 10K+ daily requests, achieving 90\% API latency reduction through distributed caching and database optimization.}
+        \resumeItem{Improved query performance by analyzing execution plans and implementing strategic indexing, accelerating execution from 3+ minutes to 60 seconds for queries handling millions of rows.}
+        \resumeItem{Designed distributed caching layer improving performance by 75\% and supporting 200+ concurrent users with 95\% cache hit rate.}
+        \resumeItem{Developed real-time streaming service cutting annual software costs by \$120K (60\% reduction) while improving reliability.}
+        \resumeItem{Executed zero-downtime database migration of 50M+ records while maintaining consistency through automated testing.}
+        \resumeItem{Established CI/CD pipelines with automated testing and code quality gates (85\%+ coverage), reducing deployment time by 70\%.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -134,12 +119,11 @@ Full-Stack AI Engineer with 5+ years of experience architecting scalable product
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Master of Engineering in Computer Science}{Apr 2025}
+      {Master of Engineering in Computer Science}{Aug 2023 -- Apr 2025}
       {University of Cincinnati, College of Engineering and Applied Science}{Cincinnati, OH}
-      \resumeItemListStart
-        \resumeItem{GPA: 3.67/4.0}
-        \resumeItem{Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Cloud Computing, Software Engineering}
-      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{2017 -- 2021}
+      {Sagi Ramakrishnam Raju Engineering College}{Andhra Pradesh, India}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -147,20 +131,11 @@ Full-Stack AI Engineer with 5+ years of experience architecting scalable product
     \resumeSubHeadingListStart
     
       \resumeProjectHeading
-          {\textbf{ArthaNethra — AI Financial Risk Investigator} $|$ \emph{Python, FastAPI, Neo4j, Weaviate, Angular}}{Oct 2024 -- Nov 2024}
+          {\textbf{Financial Document Intelligence System} $|$ \emph{Python, PostgreSQL, Docker}}{Oct 2024 -- Nov 2024}
           \resumeItemListStart
-            \resumeItem{\textbf{Financial AI Hackathon Finalist} — Engineered knowledge graph-native financial investigation platform mapping entities across 10-Ks, contracts, and invoices.}
-            \resumeItem{Designed dual-database architecture (Neo4j + Weaviate) enabling complex cross-document queries beyond traditional RAG capabilities.}
-            \resumeItem{Constructed hybrid extraction pipeline (LandingAI + Claude) achieving 99\% accuracy at 80\% lower cost than pure LLM approaches.}
-            \resumeItem{Built explainable AI chatbot with clickable PDF citations and interactive Sigma.js graph visualizations.}
-            \resumeItem{Deployed full-stack application via Docker Compose; reduced M\&A due diligence time from 200+ hours to under 2 hours (90\% reduction).}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Context-Driven Image Narration} $|$ \emph{React, Node.js, Python, TensorFlow, Transformers}}{Sep 2023 -- Feb 2024}
-          \resumeItemListStart
-            \resumeItem{Led MERN stack development of an image narration tool, achieving 79.7\% object recognition accuracy via TensorFlow and Hugging Face Transformers.}
-            \resumeItem{Optimized model performance via transfer learning on large-scale datasets using pre-trained vision-language models.}
+            \resumeItem{\textbf{Hackathon Finalist} — Built scalable system processing 100K+ pages with hybrid retrieval, reducing analysis time by 90\% (200+ hours to 2 hours).}
+            \resumeItem{Designed asynchronous backend with optimized indexing and connection pooling for complex queries across millions of rows.}
+            \resumeItem{Implemented concurrent ingestion pipeline achieving 5x throughput improvement through parallel processing.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -169,12 +144,10 @@ Full-Stack AI Engineer with 5+ years of experience architecting scalable product
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, JavaScript, TypeScript, Java, Go, SQL, C\#} \\[3pt]
-     \textbf{AI/ML Technologies}{: LLMs, RAG, Knowledge Graphs, Multi-Agent Systems, LoRA/QLoRA, Prompt Engineering, PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain, LlamaIndex, Pandas, NumPy, OpenCV} \\[3pt]
-     \textbf{Databases}{: Neo4j, Weaviate, Pinecone, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch} \\[3pt]
-     \textbf{Cloud \& DevOps}{: AWS (SageMaker, Bedrock, Lambda, ECS Fargate, S3), Docker, Kubernetes, Jenkins, CI/CD, Git} \\[3pt]
-     \textbf{Frameworks}{: FastAPI, Flask, Django, Node.js, NestJS, Angular, React, Spring Boot, ASP.NET Core} \\[3pt]
-     \textbf{Development Practices}{: Agile/Scrum, Microservices, RESTful APIs, TDD, MLOps, Model Governance}
+     \textbf{Languages}{: Python, JavaScript, TypeScript, Java, SQL, Go} \\[2pt]
+     \textbf{Backend}{: Node.js, FastAPI, Flask, Django, Spring Boot, RESTful APIs, GraphQL, Microservices} \\[2pt]
+     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Redis, Neo4j, DynamoDB} \\[2pt]
+     \textbf{Cloud \& Tools}{: AWS (ECS, Lambda, S3, Aurora), Azure, Docker, Kubernetes, Terraform, CI/CD}
     }}
  \end{itemize}
 
