@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Devi Eswar Kumar Damerla
+% Optimized for ATS
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure PDF is ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}} 
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Devi Eswar Kumar Damerla} \\ \vspace{1pt}
+    \small \href{mailto:deswark99@gmail.com}{\underline{deswark99@gmail.com}} | 
+    \href{https://www.linkedin.com/in/devi-eswar-kumar-damerla}{\underline{linkedin.com/in/devi-eswar-kumar-damerla}} |
+    \href{https://devieswar.github.io/}{\underline{devieswar.github.io}} 
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer - AI}{Nov 2024 -- Present}
+      {AI for ALL LLC (AI OWL)}{Columbus, OH}
+      \resumeItemListStart
+        \resumeItem{Lead Engineer for Flash AI, a CJIS-compliant evidence intelligence platform requiring advanced computer science knowledge to architect RAG (Retrieval-Augmented Generation) systems and multi-agent AI frameworks for secure law enforcement multimedia analysis, applying machine learning algorithms, natural language processing techniques, and distributed systems principles.}
+        \resumeItem{Architected complex multi-agent orchestration layer using Model Context Protocol (MCP) over JSON-RPC/SSE requiring deep understanding of software architecture, communication protocols, and system design to facilitate autonomous agent collaboration and complex workflow orchestration.}
+        \resumeItem{Designed and implemented transformer fine-tuning pipelines using LoRA and QLoRA techniques requiring theoretical knowledge of deep learning, neural networks, and optimization algorithms for legal domain adaptation, achieving 35\% improvement in semantic retrieval precision while reducing inference costs by 40\%.}
+        \resumeItem{Engineered sub-100ms hybrid search system requiring advanced database design and algorithm optimization expertise by integrating Neo4j knowledge graphs and Weaviate vector indices within AWS SageMaker microservices architecture to process 100K+ documents.}
+        \resumeItem{Developed asynchronous multimodal ingestion pipelines applying concurrent programming and computer vision principles using WhisperX, OpenCV, and FFmpeg for audio-video transcription and scene understanding, achieving 60\% processing time reduction.}
+        \resumeItem{Established Terraform-based MLOps infrastructure requiring DevOps and cloud computing expertise for ECS Fargate and SageMaker, implementing continuous model evaluation, version control systems, and compliance monitoring frameworks.}
+        \resumeItem{Mentored junior engineers on advanced AI/ML concepts including RAG architecture design, LLM prompt engineering techniques, and vector database optimization strategies; contributed to technical roadmap planning requiring strategic technical decision-making.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2025 -- Oct 2025}
+      {MediTechSafe Inc}{West Chester, OH}
+      \resumeItemListStart
+        \resumeItem{Engineered secure cybersecurity product development platform applying software engineering principles and computer science fundamentals to design interactive system architecture modeling using Cytoscape.js, featuring drag-and-drop component placement, real-time network visualization, and SysML integration for component-level security assessments, attack scenario simulation, and incident response planning with Angular, Go, and PostgreSQL databases.}
+        \resumeItem{Architected standardized risk management platform requiring advanced algorithms and data structures knowledge, implementing Go-based microservices, machine learning models, and full-stack frameworks (Node.js, React, Python) with interactive Cytoscape network diagrams, real-time risk scoring algorithms, and dynamic attack scenario path analysis to enable monitoring of cyber-physical systems and secure cloud deployments for IoT data analytics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Aug 2021 -- Jul 2023}
+      {Airbus Group}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Engineered high-performance aircraft CAD visualization system requiring software engineering expertise and algorithm optimization knowledge, improving model loading performance by 75\% through NestJS/Angular iPaaS microservices architecture with AWS load balancing and S3 caching optimization strategies.}
+        \resumeItem{Architected and developed custom MEAN stack solution requiring full-stack development expertise and system design capabilities, reducing annual CATIA software costs by \$120K+ (60\%) through WebSocket-based real-time model streaming and distributed architecture implementation.}
+        \resumeItem{Designed and implemented OAuth 2.0 SSO authentication system requiring security protocols knowledge and RESTful API design expertise; standardized API documentation using OpenAPI/Swagger specifications applying software engineering best practices.}
+        \resumeItem{Applied database optimization techniques and query performance analysis requiring advanced SQL and database systems knowledge, optimizing complex queries from 3+ minutes to under 60 seconds for 200+ engineering workflows processing millions of records.}
+        \resumeItem{Architected CI/CD pipelines requiring DevOps expertise using Jenkins on AWS ECS Docker containers with SonarQube code quality analysis; executed zero-downtime MariaDB-to-MySQL migration applying database engineering principles and data integrity strategies.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Engineering in Computer Science}{Aug 2023 -- Apr 2025}
+      {University of Cincinnati, College of Engineering and Applied Science}{Cincinnati, OH}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Machine Learning, Deep Learning, Algorithms, Software Engineering, Cloud Computing, Database Systems}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{Aug 2017 -- May 2021}
+      {Sagi Ramakrishnam Raju Engineering College (Affiliated with JNTU Kakinada)}{Andhra Pradesh, India}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Financial Document Intelligence System} $|$ \emph{Python, PostgreSQL, Docker}}{Oct 2024 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Hackathon Finalist} — Engineered scalable AI system processing 100K+ pages applying machine learning and information retrieval algorithms with hybrid RAG architecture, reducing financial analysis time by 90\% (200+ hours to 2 hours) through advanced NLP techniques.}
+            \resumeItem{Designed asynchronous backend architecture requiring software engineering and database systems knowledge, implementing optimized indexing strategies and connection pooling for complex SQL queries across millions of rows.}
+            \resumeItem{Developed concurrent ingestion pipeline applying parallel computing principles and algorithms optimization, achieving 5x throughput improvement through multi-threaded processing and efficient data structures.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C\#, JavaScript, TypeScript, SQL, Go} \\[2pt]
+     \textbf{AI/ML}{: PyTorch, TensorFlow, Transformers, LangChain, Hugging Face, RAG, LLM Fine-tuning (LoRA/QLoRA), Vector Databases, NLP} \\[2pt]
+     \textbf{Frameworks}{: .NET, Node.js, FastAPI, Flask, Django, Spring Boot, Angular, React, REST APIs, GraphQL, gRPC} \\[2pt]
+     \textbf{Databases}{: Neo4j, Weaviate, PostgreSQL, MySQL, MongoDB, Redis, DynamoDB} \\[2pt]
+     \textbf{Cloud \& MLOps}{: AWS (SageMaker, Bedrock, ECS, Lambda, S3), GCP, Azure, Docker, Kubernetes, Terraform, CI/CD} \\[2pt]
+     \textbf{Tools}{: Git, Jira, Postman, SonarQube, Jenkins}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{AWS Certified Solutions Architect – Associate} \\
+\textbf{Deep Learning Specialization} — DeepLearning.AI
+}}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
